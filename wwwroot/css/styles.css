@@ -764,7 +764,7 @@ header .details em {
   font-style: normal;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -889,7 +889,7 @@ footer .hosts .images .efac {
   max-width: 50px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -964,7 +964,7 @@ footer .hosts .images .efac {
           order: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .presentations {
     grid-template-columns: 1fr;
     grid-gap: 20px;
@@ -1038,7 +1038,7 @@ footer .hosts .images .efac {
   height: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   #talk_details {
     position: fixed;
     top: 0;
