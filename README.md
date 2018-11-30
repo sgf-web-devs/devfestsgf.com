@@ -21,4 +21,6 @@ CD into the project folder and run `npm install`
 
 Once all of the node modules are installed, run `dotnet run` which will start the kestrel web server. With this running you can run the website.
 
-If you want to work on the site, in a second terminal window run `npm run dev` and this will proxy the kestrel site and launch a browser window with browsersync. This will allow live updates to cshtml, css, js, to be pushed to the browser. .cs changes will NOT livereload.
+If you want to work on the site, in a second terminal window run `npm run watch` and this will proxy the kestrel site and launch a browser window with browsersync. This will allow live updates to cshtml, css, js, to be pushed to the browser. .cs changes will NOT livereload.
+
+Static site builds are currently in the works. To utilize an early version of the feature, point your browser to ~/GenerateStaticSite - Click submit and a static directory will be created at the root of the project folder.
