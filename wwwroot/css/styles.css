@@ -1012,6 +1012,7 @@ footer .hosts .images .efac {
   -webkit-transform: translateY(2em);
           transform: translateY(2em);
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   max-height: 95vh;
 }
 

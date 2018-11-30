@@ -18,6 +18,7 @@
     transform: translateY(2em);
 
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     max-height: 95vh;
 
     h1 { 
