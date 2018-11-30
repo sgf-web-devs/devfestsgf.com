@@ -57,7 +57,7 @@ namespace CareToLearnUI.Pages
                         foreach (string f in StaticSiteGeneration.GetFiles(Exclusions.Split(",")))
                         {
                             var file = f.Split("Pages")[1].Replace("/", "").Replace(@"\", "").Replace(".cshtml", "");
-                            var url = "http:" + BaseURL + file;
+                            var url = BaseURL + file;
                             var saveLocationFolder = SiteSaveLocation + file;
                             var saveLocationIndex = saveLocationFolder + "/index.html";
 
