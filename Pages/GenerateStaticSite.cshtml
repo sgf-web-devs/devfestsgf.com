@@ -1,0 +1,46 @@
+﻿@page
+@model GenerateStaticSiteModel
+@{
+    Layout = null;
+    var baseUrl = HttpContext.Request.Host + "/";
+}
+
+
+<style>
+    input[type=text] { width: 400px; }
+    li { margin: 1em; display: flex; }
+    label { width: 300px; }
+</style>
+
+<form method="post">
+    <div class="container pad_last_item">
+        <div class="padding_top_70">@Model.Messages</div>
+        @if (Model.FilesDownloaded != null && Model.FilesDownloaded.Length > 0)
+        {
+            <ul>@foreach(string f in Model.FilesDownloaded) { <li>@f</li> }</ul>
+        }
+        else
+        {
+            <ul>
+                <li>
+                    <label>Site URL</label>
+                    <input asp-for="BaseURL" value="@baseUrl" />
+                </li>
+                <li>
+                    <label>Site Save Folder</label>
+                    <input asp-for="SiteSaveLocation" />
+                </li>
+                <li>
+                    <label>WWWRoot Folder</label>
+                    <input asp-for="Root" />
+                </li>
+                <li>
+                    <label>File Name Exclusions (comma separated)</label>
+                    <input asp-for="Exclusions" />
+                </li>
+
+                <li><input type="submit" value="submit" /></li>
+            </ul>
+        }
+    </div>
+</form>

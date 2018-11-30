@@ -1,0 +1,61 @@
+.presentations
+{
+    list-style: none; margin: 2em 0 0 0; padding: 0;
+
+    li {
+        margin: 0; padding: 0;
+    }
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+
+    h2, h3, h4 {
+        margin: 0; line-height: 1.25em; font-weight: normal; font-family: 'google_sansmedium';
+    }
+
+    h4 {
+        font-family: 'google_sansregular';
+    }
+
+    li {
+        display: flex; flex-direction: column; text-align: center;
+
+        hgroup {
+            margin-bottom: 1em;
+        }
+
+        &:nth-child(even) {
+            padding-top: 75%;
+
+            hgroup {
+                margin-bottom: 0; margin-top: 1em; order: 2;
+            }
+
+            img {
+                order: 1;
+            }
+        }
+    }
+
+    @include mq-tablet {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+
+        li {
+            margin-bottom: 3em;
+
+            &:nth-child(even) {
+                padding-top: 0;
+
+                hgroup {
+                    margin-bottom: 1em; margin-top: 0; order: 1;
+                }
+
+                img {
+                    order: 2;
+                }
+            }
+        }
+    }
+}

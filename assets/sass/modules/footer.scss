@@ -1,0 +1,58 @@
+footer {
+    display: flex; align-items: center; margin-top: 4em; padding-bottom: 2em;
+
+    h4, h5 {
+        margin: 0; font-weight: normal; line-height: 1.5em;
+    }
+
+    .hack {
+        flex-basis: 65%;
+        margin-right: 50px;
+
+        h4 {
+            font-family: 'google_sansmedium';
+            font-size: 1.75em;
+
+            span {
+                font-family: 'google_sansregular';
+                font-size: .65em;
+            }
+        }
+
+        p:first-of-type {
+            margin-top: 0;
+        }
+    }
+
+    .hosts {
+        flex: 1; text-align: center;
+
+        .images{
+            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            justify-items: center;
+
+            a {
+                flex: 1;
+                img {
+                    display: block;
+                }
+            }
+
+            .efac {
+                max-width: 50px;
+            }
+        }
+    }
+
+    @include mq-tablet {
+        flex-direction: column;
+
+
+        .hack {
+            margin-right: 0; margin-bottom: 1em;
+        }
+    }
+}

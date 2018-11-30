@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="730px" height="258px" viewBox="0 0 730 258" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>gdg_springfield</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="gdg_springfield" transform="translate(-1.000000, -25.000000)">
+            <text id="GDG" fill="#FFFFFE" font-family="GoogleSans-Bold, Google Sans" font-size="230" font-weight="bold">
+                <tspan x="191.65" y="222">GDG</tspan>
+            </text>
+            <text id="SPRINGFIELD" fill="#FFFFFE" font-family="GoogleSans-Bold, Google Sans" font-size="40" font-weight="bold">
+                <tspan x="337.46" y="282">SPRINGFIELD</tspan>
+            </text>
+            <g id="angle_white" transform="translate(0.000000, 24.000000)" fill="#FFFFFF">
+                <g id="g3726" transform="translate(74.000000, 112.500000) scale(-1, 1) rotate(-180.000000) translate(-74.000000, -112.500000) ">
+                    <g id="g3728">
+                        <g id="g3730-Clipped">
+                            <g id="g3730" transform="translate(0.599994, 0.799972)">
+                                <g id="Group" transform="translate(0.000000, 0.000000)">
+                                    <g id="g3882" transform="translate(0.736474, 1.088752)">
+                                        <polygon id="path3884" points="81.1999978 71.399998 63.5039982 99.2991978 0.481599778 0.380799818 36.3327989 0.380799818"></polygon>
+                                    </g>
+                                    <g id="g3886" transform="translate(47.490069, 0.746512)">
+                                        <polygon id="path3888" points="39.7999989 63.1999983 0.510399866 0.726399885 34.838399 0.726399885 56.9023985 36.835199"></polygon>
+                                    </g>
+                                    <g id="g3890" transform="translate(1.731034, 47.176110)">
+                                        <polygon id="path3892" points="36.3999989 175.199996 0.79519977 175.199996 108.707197 0.211199896 125.697597 27.6735992"></polygon>
+                                    </g>
+                                    <g id="g3894" transform="translate(48.211189, 83.876110)">
+                                        <path d="M94.7999975,39.7999989 L34.387199,138.505597 L0.932799829,138.505597 L84.8095978,0.63359986 L94.7999975,16.7279994 C96.8495975,20.0767994 97.9135978,24.0639992 97.9135978,28.2863992 C97.9135978,32.4863991 96.8495975,36.473599 94.7999975,39.7999989" id="path3896"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

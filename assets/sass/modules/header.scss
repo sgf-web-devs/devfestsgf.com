@@ -1,0 +1,106 @@
+header{    
+    display: flex; align-items: center; justify-content: center; padding-top: 3em;
+
+    .logo {
+        width: 16%; align-self: flex-start;
+
+        img {
+            width: 100%;
+        }
+
+        hgroup {
+            display: none;
+        }
+    }
+
+    .details{
+        flex: 1;
+    }
+
+    h1, h2, h3, h4 {
+        margin: 0; color: #FFFFFE; line-height: 1em;
+    }
+
+    h1 {
+        font-size: 5vw;
+        font-weight: normal;
+        font-family: 'google_sansmedium';
+    }
+
+    h2 {
+        font-size: 4vw;
+        font-weight: normal;
+    }
+
+    h3 {
+        font-size: 2.75vw; font-weight: normal; font-family: 'google_sansmedium';
+    }
+
+    h4 {
+        font-size: 2vw; font-weight: normal;
+    }
+
+    @include mq-gt-large-desktop() {
+        h1 { font-size: 75px; }
+        h2 { font-size: 60px; }
+        h3 { font-size: 41px; }
+        h4 { font-size: 30px; }
+    }
+
+    hgroup:nth-child(1) {
+        padding-top: 3.25em;
+    }
+
+    hgroup:nth-child(2) {
+        margin-top: 2em;
+
+        h3, h4 {
+            line-height: 1.25em;
+        }
+    }
+
+    .details{
+        margin-left: 5%;
+        max-width: 684px;
+
+        a {
+            font-size: 1.5em; font-family: 'google_sansmedium'; text-decoration: underline;
+        }
+
+        em {
+            font-family: 'google_sansmedium'; font-style: normal;
+        }
+    }
+
+    @include mq-tablet {
+        flex-direction: column;
+
+        h1 { font-size: 8vw; }
+        h2 { font-size: 6vw; }
+        h3 { font-size: 5vw; }
+        h4 { font-size: 5vw; }
+
+        .logo {
+            display: flex; width: 100%; align-items: center; justify-content: center;
+
+            img {
+                width: 16%;
+            }
+
+            hgroup {
+                display: block; margin-top: 0; margin-left: 20px;
+                //width: 75%;
+            }
+        }
+
+        .details {
+            hgroup:nth-child(1) {
+                display: none;
+            }
+
+            a {
+                font-size: 1em;
+            }
+        }
+    }
+}

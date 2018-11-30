@@ -1,0 +1,40 @@
+// Font Mixins
+
+// @mixin merriweather-bold() {
+//     font-family: 'Merriweather', serif;
+//     font-weight: 700;
+// }
+
+
+@font-face {
+    font-family: 'google_sansbold';
+    src: url('/css/fonts/googlesans-bold-webfont.woff2') format('woff2'),
+         url('/css/fonts/googlesans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'google_sansmedium';
+    src: url('/css/fonts/googlesans-medium-webfont.woff2') format('woff2'),
+         url('/css/fonts/googlesans-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'google_sansregular';
+    src: url('/css/fonts/googlesans-regular-webfont.woff2') format('woff2'),
+         url('/css/fonts/googlesans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,18 @@
+@mixin mq-gt-large-desktop {
+    @media (min-width: 1500px) {
+        @content;
+    }
+}
+
+
+@mixin mq-large-tablet {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin mq-tablet {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
