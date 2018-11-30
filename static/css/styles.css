@@ -635,6 +635,24 @@ a:hover {
   max-width: 1600px;
 }
 
+#site_content {
+  -webkit-transition: .25s filter;
+  transition: .25s filter;
+}
+
+body.detail_active #site_content {
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+}
+
+body.detail_active #talk_details {
+  display: block;
+}
+
+body.detail_active .presentations li {
+  cursor: default;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -897,6 +915,7 @@ footer .hosts .images .efac {
 .presentations li {
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 .presentations h2,
@@ -971,6 +990,66 @@ footer .hosts .images .efac {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+}
+
+#talk_details {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: none;
+  height: 100vh;
+  left: 0;
+}
+
+.talk_detail {
+  padding: 50px;
+  max-width: 1200px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#15132C), to(#1F1B51));
+  background-image: linear-gradient(-180deg, #15132C 0%, #1F1B51 100%);
+  margin: 0 auto;
+  display: none;
+  -webkit-transform: translateY(2em);
+          transform: translateY(2em);
+  overflow-y: auto;
+  max-height: 95vh;
+}
+
+.talk_detail h1 {
+  line-height: 1.25em;
+  margin: 0;
+}
+
+.talk_detail p:last-of-type {
+  margin-bottom: 0;
+}
+
+.talk_detail .close {
+  margin-bottom: .75em;
+  display: block;
+  cursor: pointer;
+}
+
+.talk_detail.active {
+  display: block;
+  opacity: 1;
+  top: 0;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  #talk_details {
+    position: fixed;
+    top: 0;
+  }
+
+  .talk_detail {
+    padding: 25px;
+    font-size: .9em;
+  }
+
+  .talk_detail h1 {
+    font-size: 1.25em;
   }
 }
 

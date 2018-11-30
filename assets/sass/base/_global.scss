@@ -49,3 +49,21 @@ a, a:visited, a:active, a:hover {
 
     &.wide { max-width: 1600px; }
 }
+
+#site_content {
+    transition: .25s filter;
+}
+
+body.detail_active {
+    #site_content {
+        filter: blur(20px);
+    }
+
+    #talk_details {
+        display: block;
+    }
+
+    .presentations li {
+        cursor: default;
+    }
+}
